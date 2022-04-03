@@ -1,0 +1,11 @@
+{
+  "routes": {
+    "home": "Home",
+    "about": "About me",
+    "mywork": "My work",
+    "getresume": "Get resume"
+  },
+  "personal": {
+    "name": "MarthoxGT"
+  }
+}

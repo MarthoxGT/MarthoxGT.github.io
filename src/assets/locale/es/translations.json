@@ -1,0 +1,11 @@
+{
+  "routes": {
+    "home": "Inicio",
+    "about": "Acerca de mi",
+    "mywork": "Mi trabajo",
+    "getresume": "Obtener Curriculum"
+  },
+  "personal": {
+    "name": "MarthoxGT"
+  }
+}
