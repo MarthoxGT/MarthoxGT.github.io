@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-import routes from "../../Router/routes.json";
+import routes from "../../router/routes.json";
 
 const ContentSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -22,38 +22,32 @@ const ContentSlider = () => {
       </Link>
     ));
 
-  useEffect(() => {
-    const incrementSliderTimeout = setTimeout(() => incrementSlide(), 5000);
-
-    return () => clearInterval(incrementSliderTimeout);
-  }, [currentSlide]);
-
   const incrementSlide = () =>
-    setCurrentSlide(
-      currentSlide + 1 > slides.length - 1 ? 0 : currentSlide + 1
+    setCurrentSlide((prevSlide) =>
+      prevSlide + 1 > slides.length - 1 ? 0 : prevSlide + 1
     );
 
   const decrementSlide = () =>
-    setCurrentSlide(
-      currentSlide - 1 < 0 ? slides.length - 1 : currentSlide - 1
+    setCurrentSlide((prevSlide) =>
+      prevSlide - 1 < 0 ? slides.length - 1 : prevSlide - 1
     );
 
+  useEffect(() => {
+    const incrementSliderInterval = setInterval(() => incrementSlide(), 3000);
+
+    return () => clearInterval(incrementSliderInterval);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
   return (
-    <div className="flex gap-10">
-      <button
-        className="w-10 text-2xl text-gray-50"
-        onClick={() => decrementSlide()}
-      >
+    <nav className="flex gap-10">
+      <button className="w-10 text-2xl text-gray-50" onClick={decrementSlide}>
         {"<"}
       </button>
       {slides[currentSlide]}
-      <button
-        className="w-10 text-2xl text-gray-50"
-        onClick={() => incrementSlide()}
-      >
+      <button className="w-10 text-2xl text-gray-50" onClick={incrementSlide}>
         {">"}
       </button>
-    </div>
+    </nav>
   );
 };
 
