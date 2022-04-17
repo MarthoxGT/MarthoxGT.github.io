@@ -11,9 +11,10 @@ const NavBar = () => {
 
   const links = Object.entries(routes).map(([key, value]) => (
     <Link
-      className={`flex w-40 justify-center text-2xl text-gray-50 ${
+      className={`flex w-40 justify-center border-b-2 border-b-transparent text-2xl text-gray-50 hover:border-b-green-400 ${
         value === pathname ? "disabled" : null
       }`}
+      key={key}
       to={value}
     >
       {t(routePrefix + key)}
