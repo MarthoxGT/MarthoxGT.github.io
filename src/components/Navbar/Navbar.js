@@ -7,17 +7,17 @@ import routes from "../../router/routes.json";
 import "./navbar.css";
 
 const Navbar = () => {
-  const { pathname } = useLocation();
   const { t } = useTranslation();
   const { routePrefix } = require("../../assets/constants/prefixes.json");
 
-  const links = Object.entries(routes).map(([key, value]) => (
-    <Link key={key} to={value}>
-      {t(routePrefix + key)}
-    </Link>
-  ));
+  const getLinks = () =>
+    Object.entries(routes).map(([key, value]) => (
+      <Link key={key} to={value}>
+        {t(routePrefix + key)}
+      </Link>
+    ));
 
-  return <nav className="navbar">{links.map((link) => link)}</nav>;
+  return <nav className="navbar">{getLinks()}</nav>;
 };
 
 export default Navbar;
