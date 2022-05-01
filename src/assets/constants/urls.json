@@ -1,0 +1,5 @@
+{
+  "githubAPI": {
+    "getRepos": "https://api.github.com/users/MarthoxGT/repos"
+  }
+}

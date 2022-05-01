@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 5
+  version: 6
   cacheKey: 8
 
 "@ampproject/remapping@npm:^2.1.0":
@@ -577,7 +577,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-private-property-in-object@npm:^7.16.7":
+"@babel/plugin-proposal-private-property-in-object@npm:^7.16.0, @babel/plugin-proposal-private-property-in-object@npm:^7.16.7":
   version: 7.16.7
   resolution: "@babel/plugin-proposal-private-property-in-object@npm:7.16.7"
   dependencies:
@@ -6480,12 +6480,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:^21.6.14":
-  version: 21.6.14
-  resolution: "i18next@npm:21.6.14"
+"i18next@npm:^21.6.16":
+  version: 21.6.16
+  resolution: "i18next@npm:21.6.16"
   dependencies:
     "@babel/runtime": ^7.17.2
-  checksum: bc6e117874d9b69a39d6ad322851d25f75908c7fa977c8771b98ba7b0273aceba96e82326ed0855b8db098b1490c5a0decbe62b4f61dac84fdc677c2fdc52bb8
+  checksum: f210130fd835ebd90bfdc6a497d3c1d992261174e030e995a03d070b099acba680e495a376eb9255bb8eb68b4e518fe8ea96ec71507e194fd043aecb3397c9a2
   languageName: node
   linkType: hard
 
@@ -7977,18 +7977,14 @@ __metadata:
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^12.0.0
     "@testing-library/user-event": ^13.2.1
-    autoprefixer: ^10.4.4
-    i18next: ^21.6.14
-    postcss: ^8.4.12
+    i18next: ^21.6.16
     prettier: ^2.6.1
-    prettier-plugin-tailwindcss: ^0.1.8
     react: ^18.0.0
     react-dom: ^18.0.0
-    react-i18next: ^11.16.2
+    react-i18next: ^11.16.7
     react-router: ^6.3.0
     react-router-dom: ^6.3.0
     react-scripts: 5.0.0
-    tailwindcss: ^3.0.23
     web-vitals: ^2.1.0
   languageName: unknown
   linkType: soft
@@ -9683,7 +9679,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.3.5, postcss@npm:^8.4.12, postcss@npm:^8.4.4, postcss@npm:^8.4.6, postcss@npm:^8.4.7":
+"postcss@npm:^8.3.5, postcss@npm:^8.4.4, postcss@npm:^8.4.6, postcss@npm:^8.4.7":
   version: 8.4.12
   resolution: "postcss@npm:8.4.12"
   dependencies:
@@ -9705,15 +9701,6 @@ __metadata:
   version: 1.1.2
   resolution: "prelude-ls@npm:1.1.2"
   checksum: c4867c87488e4a0c233e158e4d0d5565b609b105d75e4c05dc760840475f06b731332eb93cc8c9cecb840aa8ec323ca3c9a56ad7820ad2e63f0261dadcb154e4
-  languageName: node
-  linkType: hard
-
-"prettier-plugin-tailwindcss@npm:^0.1.8":
-  version: 0.1.8
-  resolution: "prettier-plugin-tailwindcss@npm:0.1.8"
-  peerDependencies:
-    prettier: ">=2.2.0"
-  checksum: b183f061dfd07dd6faee5244c1d1f9efe39ec58b4b8382bb6de379e2a831484bd9b59baca1cb58b46872de40c63d7958cdb2adc953706019b0929843b3406228
   languageName: node
   linkType: hard
 
@@ -9962,9 +9949,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-i18next@npm:^11.16.2":
-  version: 11.16.2
-  resolution: "react-i18next@npm:11.16.2"
+"react-i18next@npm:^11.16.7":
+  version: 11.16.7
+  resolution: "react-i18next@npm:11.16.7"
   dependencies:
     "@babel/runtime": ^7.14.5
     html-escaper: ^2.0.2
@@ -9977,7 +9964,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: 3e86c5e7a73eef88eff7487bbc87ecf3d5c6808ce3d0cc1e9599e6a1b72466d2d6ced2b1b600c18a2309757bea49d1670526a1bc8953a9bf377964e9ea3c9166
+  checksum: 666594e20dcff000294e904b6ea36f4e5fa2d3b7cebf8c78f04ec3b96ff52d9ad2931adb0d6865ccbd870cc8a782f76a77dfc134653647c8fd73c4217a65e0e6
   languageName: node
   linkType: hard
 
@@ -11248,7 +11235,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.0.2, tailwindcss@npm:^3.0.23":
+"tailwindcss@npm:^3.0.2":
   version: 3.0.23
   resolution: "tailwindcss@npm:3.0.23"
   dependencies:

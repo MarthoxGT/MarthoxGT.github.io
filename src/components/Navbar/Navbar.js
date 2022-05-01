@@ -4,27 +4,20 @@ import { useTranslation } from "react-i18next";
 
 import routes from "../../router/routes.json";
 
-const NavBar = () => {
+import "./navbar.css";
+
+const Navbar = () => {
   const { pathname } = useLocation();
   const { t } = useTranslation();
   const { routePrefix } = require("../../assets/constants/prefixes.json");
 
   const links = Object.entries(routes).map(([key, value]) => (
-    <Link
-      className={`flex w-40 justify-center border-b-2 border-b-transparent text-2xl text-gray-50 hover:border-b-green-400 ${
-        value === pathname ? "disabled" : null
-      }`}
-      key={key}
-      to={value}
-    >
+    <Link key={key} to={value}>
       {t(routePrefix + key)}
     </Link>
   ));
-  return (
-    <nav className="flex h-12 w-screen flex-row items-center justify-center">
-      {links.map((link) => link)}
-    </nav>
-  );
+
+  return <nav className="navbar">{links.map((link) => link)}</nav>;
 };
 
-export default NavBar;
+export default Navbar;

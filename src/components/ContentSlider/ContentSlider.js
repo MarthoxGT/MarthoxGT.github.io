@@ -13,14 +13,7 @@ const ContentSlider = () => {
 
   const slides = Object.entries(routes)
     .filter(([_key, value]) => value !== pathname)
-    .map(([key, value]) => (
-      <Link
-        className="flex w-40 justify-center text-2xl text-gray-50"
-        to={value}
-      >
-        {t(routePrefix + key)}
-      </Link>
-    ));
+    .map(([key, value]) => <Link to={value}>{t(routePrefix + key)}</Link>);
 
   const incrementSlide = () =>
     setCurrentSlide((prevSlide) =>
@@ -39,14 +32,10 @@ const ContentSlider = () => {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <nav className="flex gap-10">
-      <button className="w-10 text-2xl text-gray-50" onClick={decrementSlide}>
-        {"<"}
-      </button>
+    <nav>
+      <button onClick={decrementSlide}>{"<"}</button>
       {slides[currentSlide]}
-      <button className="w-10 text-2xl text-gray-50" onClick={incrementSlide}>
-        {">"}
-      </button>
+      <button onClick={incrementSlide}>{">"}</button>
     </nav>
   );
 };
