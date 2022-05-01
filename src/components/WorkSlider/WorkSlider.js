@@ -1,19 +1,16 @@
-import React, { useLayoutEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const WorkSlider = () => {
   const [projects, setProjects] = useState([]);
 
   const { githubAPI } = require("../../assets/constants/urls.json");
 
-  const getProjects = () => {
+  const getProjects = () =>
     fetch(githubAPI.getRepos)
       .then((response) => response.json())
-      .then((data) => {
-        setProjects(data);
-      });
-  };
+      .then((data) => setProjects(data));
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     getProjects();
   }, []);
 
