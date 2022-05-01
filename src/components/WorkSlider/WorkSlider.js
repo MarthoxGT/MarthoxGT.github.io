@@ -6,11 +6,9 @@ const WorkSlider = () => {
   const { githubAPI } = require("../../assets/constants/urls.json");
 
   const getProjects = () => {
-    console.log(projects);
     fetch(githubAPI.getRepos)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setProjects(data);
       });
   };
