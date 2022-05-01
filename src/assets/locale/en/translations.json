@@ -1,0 +1,21 @@
+{
+  "routes": {
+    "home": "Home",
+    "about": "About me",
+    "mywork": "My work",
+    "getresume": "Get resume"
+  },
+  "personal": {
+    "name": "MarthoxGT",
+    "fullName": "Mateo Gregory Jimenez"
+  },
+  "general": {
+    "description": "Description",
+    "personalInfo": "Personal info",
+    "professionalInfo": "Professional info"
+  },
+  "content": {
+    "personalInfo": "Here goes the personal info content for the about me page",
+    "professionalInfo": "Here goes the professional info content for the about me page"
+  }
+}
