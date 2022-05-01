@@ -6,6 +6,16 @@
     "getresume": "Obtener Curriculum"
   },
   "personal": {
-    "name": "MarthoxGT"
+    "name": "MarthoxGT",
+    "fullName": "Mateo Gregory Jimenez"
+  },
+  "general": {
+    "description": "Descripcion",
+    "personalInfo": "Informacion personal",
+    "professionalInfo": "Informacion profesional"
+  },
+  "content": {
+    "personalInfo": "Aqui va la informacion personal para la pagina de sobre mi",
+    "professionalInfo": "Aqui va la informacion profesional para la pagina de sobre mi"
   }
 }
