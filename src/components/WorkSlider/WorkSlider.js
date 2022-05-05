@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./workSlider.css";
 
 const WorkSlider = () => {
+  const { t } = useTranslation();
+
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -24,12 +27,21 @@ const WorkSlider = () => {
             onClick={() => (window.location.href = project.html_url)}
           >
             <img src={project.owner.avatar_url} />
-            <section>
+            <section className="cardSection">
               <h1>{project.name}</h1>
               <h2>{project.owner.login}</h2>
-              <h3>{project.created_at}</h3>
-              <h3>{project.updated_at}</h3>
-              <p>{project.description}</p>
+              <div className="cardElement">
+                <h3>{t("myWork.createdAt")}</h3>
+                <p>{project.created_at}</p>
+              </div>
+              <div className="cardElement">
+                <h3>{t("myWork.updatedAt")}</h3>
+                <p>{project.updated_at}</p>
+              </div>
+              <div className="cardElement">
+                <h3>{t("myWork.description")}</h3>
+                <p>{project.description || t("myWork.no_description")}</p>
+              </div>
             </section>
           </div>
         </div>

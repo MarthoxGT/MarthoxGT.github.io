@@ -17,5 +17,11 @@
   "content": {
     "personalInfo": "Here goes the personal info content for the about me page",
     "professionalInfo": "Here goes the professional info content for the about me page"
+  },
+  "myWork": {
+    "createdAt": "Created at:",
+    "updatedAt": "Last updated at:",
+    "description": "Description:",
+    "no_description": "There are no details available for this project at the time"
   }
 }

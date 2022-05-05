@@ -17,5 +17,11 @@
   "content": {
     "personalInfo": "Aqui va la informacion personal para la pagina de sobre mi",
     "professionalInfo": "Aqui va la informacion profesional para la pagina de sobre mi"
+  },
+  "myWork": {
+    "createdAt": "Creado en:",
+    "updatedAt": "Acualizado hace:",
+    "description": "Descripcion:",
+    "no_description": "En este momento no hay detalles disponibles sobre este projecto "
   }
 }

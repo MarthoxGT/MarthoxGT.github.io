@@ -29,3 +29,23 @@
   overflow: hidden;
   display: flex;
 }
+
+.cardSection {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.cardContent img {
+  border-radius: 1rem;
+  object-fit: cover;
+  height: 50%;
+  margin: 2rem;
+}
+
+.cardElement {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-top: 3rem;
+}
