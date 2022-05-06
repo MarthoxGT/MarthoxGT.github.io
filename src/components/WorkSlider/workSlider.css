@@ -1,15 +1,19 @@
 .workCarrousel {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
+  align-self: flex-end;
   width: 100%;
-  height: 45%;
-  overflow: hidden;
+  height: 80%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .workCard {
   display: flex;
   min-width: 50%;
   max-width: 50%;
+  min-height: 50%;
+  max-height: 50%;
   justify-content: center;
   align-items: center;
   transition: transform 1s;
@@ -21,33 +25,13 @@
   min-height: 90%;
   max-height: 90%;
   cursor: pointer;
-  overflow: hidden;
   background-color: #1b1b1b;
-  border-radius: 1rem;
-  padding: 2rem;
+  border-radius: 2rem;
+  padding: 4rem;
   overflow: hidden;
-  display: flex;
-}
-
-.cardContent img {
-  border-radius: 1rem;
-  object-fit: cover;
-  height: 120px;
-  width: 120px;
-  margin: 2rem;
-}
-
-.cardSection {
-  margin: 0;
   display: flex;
   flex-flow: column;
-  max-width: 100%;
-}
-
-.cardHeader {
-  max-width: 70%;
-  display: flex;
-  align-items: center;
+  position: relative;
   gap: 1rem;
 }
 
@@ -55,15 +39,10 @@
   display: flex;
   align-items: baseline;
   gap: 1rem;
+}
+
+.cardSeparator {
   margin-top: 1rem;
-}
-
-.headerContainer {
-  max-width: 100%;
-}
-
-.projectTitle {
-  display: flex;
-  flex-wrap: wrap;
-  overflow-x: scroll;
+  margin-bottom: 1rem;
+  border-bottom: solid 1px hsl(116, 54%, 78%);
 }

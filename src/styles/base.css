@@ -18,8 +18,21 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
-  background: transparent; /* make scrollbar transparent */
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(116, 54%, 78%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: greenyellow;
 }
 
 *,
