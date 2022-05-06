@@ -19,9 +19,10 @@
     "professionalInfo": "Here goes the professional info content for the about me page"
   },
   "myWork": {
-    "createdAt": "Created at:",
-    "updatedAt": "Last updated at:",
+    "createdAt": "Created:",
+    "updatedAt": "Last updated:",
     "description": "Description:",
-    "no_description": "There are no details available for this project at the time"
+    "noDescription": "There are no details available for this project at the time",
+    "daysAgo": "days ago"
   }
 }
