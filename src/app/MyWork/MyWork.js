@@ -6,8 +6,6 @@ import SearchBar from "../../components/SearchBar/SearchBar";
 import "./myWork.css";
 
 const MyWork = () => {
-  // const { t } = useTranslation();
-
   return (
     <div className="myWork">
       <SearchBar />
