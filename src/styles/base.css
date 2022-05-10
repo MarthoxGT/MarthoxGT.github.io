@@ -1,7 +1,7 @@
 /* Colors */
 
 :root {
-  --background: hsl(177, 49%, 17%);
+  --background: #121212;
   --Text: hsl(108, 100%, 93%);
   --Text2: hsl(116, 54%, 78%);
   --Main-Color-1: hsl(358, 87%, 70%);
@@ -15,6 +15,24 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(116, 54%, 78%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: greenyellow;
 }
 
 *,
@@ -34,20 +52,27 @@ body {
 }
 
 /* weight 300, 400, 800 */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   font-weight: 800;
   color: var(--Text);
-  font-size: 3.5rem;
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-weight: 600;
+  color: var(--Text);
+  font-size: 4rem;
+}
+
+h3 {
+  font-weight: 600;
+  color: var(--Text);
+  font-size: 2.5rem;
 }
 
 p {
-  font-weight: 400;
   color: var(--Text);
+  font-size: 2.25rem;
 }
 
 a {

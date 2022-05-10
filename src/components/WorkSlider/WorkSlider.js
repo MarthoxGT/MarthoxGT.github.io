@@ -1,33 +1,66 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Temporal } from "@js-temporal/polyfill";
+import "./workSlider.css";
 
 const WorkSlider = () => {
+  const { t } = useTranslation();
+
   const [projects, setProjects] = useState([]);
 
-  const { githubAPI } = require("../../assets/constants/urls.json");
+  useEffect(() => {
+    const { githubAPI } = require("../../assets/constants/urls.json");
 
-  const getProjects = () =>
     fetch(githubAPI.getRepos)
       .then((response) => response.json())
       .then((data) => setProjects(data));
-
-  useEffect(() => {
-    getProjects();
   }, []);
 
   return (
-    <nav>
+    <nav className="workCarrousel">
       {projects?.map((project) => (
-        <div
-          key={project.id}
-          // onClick={() => (window.location.href = project.html_url)}
-        >
-          <img src={project.owner.avatar_url} />
-          <section>
+        <div className="workCard" key={project.id}>
+          <section
+            className="cardContent"
+            onClick={() => (window.location.href = project.html_url)}
+          >
             <h1>{project.name}</h1>
             <h2>{project.owner.login}</h2>
-            <h3>{project.created_at}</h3>
-            <h3>{project.updated_at}</h3>
-            <p>{project.description}</p>
+            <div className="cardSeparator" />
+            <div className="cardElement">
+              <h3>{t("myWork.createdAt")}</h3>
+              <p>
+                {Temporal.Instant.from(project.created_at)
+                  .until(Temporal.Now.instant())
+                  .round("days")
+                  .total("days")}{" "}
+                {t("myWork.daysAgo")} (
+                {Temporal.Instant.from(project.created_at)
+                  .toString()
+                  .split("T")
+                  .at(0)}
+                )
+              </p>
+            </div>
+            <div className="cardElement">
+              <h3>{t("myWork.updatedAt")}</h3>
+              <p>
+                {Temporal.Instant.from(project.updated_at)
+                  .until(Temporal.Now.instant())
+                  .round("days")
+                  .total("days")}{" "}
+                {t("myWork.daysAgo")} (
+                {Temporal.Instant.from(project.updated_at)
+                  .toString()
+                  .split("T")
+                  .at(0)}
+                )
+              </p>
+            </div>
+            <div className="cardElement">
+              <h3>{t("myWork.description")}</h3>
+              <p>{project.description || t("myWork.noDescription")}</p>
+            </div>
           </section>
         </div>
       ))}
