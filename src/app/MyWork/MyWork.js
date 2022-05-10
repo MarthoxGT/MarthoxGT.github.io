@@ -1,15 +1,15 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
+import React, { useState } from "react";
 import WorkSlider from "../../components/WorkSlider/WorkSlider";
 import SearchBar from "../../components/SearchBar/SearchBar";
 
 import "./myWork.css";
 
 const MyWork = () => {
+  const [searchQuery, setSearchQuery] = useState("");
   return (
     <div className="myWork">
-      <SearchBar />
-      <WorkSlider />
+      <SearchBar setSearchQuery={setSearchQuery} />
+      <WorkSlider searchQuery={searchQuery} />
     </div>
   );
 };

@@ -4,5 +4,5 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
