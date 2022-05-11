@@ -4,6 +4,8 @@ import { useTranslation } from "react-i18next";
 
 import routes from "../../router/routes.json";
 
+import "./contentSlider.css";
+
 const ContentSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -13,7 +15,11 @@ const ContentSlider = () => {
 
   const slides = Object.entries(routes)
     .filter(([_key, value]) => value !== pathname)
-    .map(([key, value]) => <Link to={value}>{t(routePrefix + key)}</Link>);
+    .map(([key, value]) => (
+      <Link className="linkToContent" to={value}>
+        <h3>{t(routePrefix + key)}</h3>
+      </Link>
+    ));
 
   const incrementSlide = () =>
     setCurrentSlide((prevSlide) =>
@@ -32,10 +38,14 @@ const ContentSlider = () => {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <nav>
-      <button onClick={decrementSlide}>{"<"}</button>
+    <nav className="contentSlider">
+      <button className="contentSliderButton" onClick={decrementSlide}>
+        {"<"}
+      </button>
       {slides[currentSlide]}
-      <button onClick={incrementSlide}>{">"}</button>
+      <button className="contentSliderButton" onClick={incrementSlide}>
+        {"/>"}
+      </button>
     </nav>
   );
 };
