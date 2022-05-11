@@ -19,7 +19,9 @@ const WorkSlider = ({ searchQuery }) => {
   return (
     <nav className="workCarrousel">
       {projects
-        ?.filter(({ name }) => name.includes(searchQuery))
+        ?.filter(({ name }) =>
+          name.toLowerCase().includes(searchQuery.toLowerCase())
+        )
         .map(
           ({
             id,
