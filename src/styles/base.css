@@ -2,14 +2,14 @@
 
 :root {
   --background: #121212;
-  --Text: hsl(108, 100%, 93%);
-  --Text2: hsl(116, 54%, 78%);
-  --Main-Color-1: hsl(358, 87%, 70%);
-  --Main-Color-2: hsl(183, 89%, 71%);
-  --Main-Color-3: hsl(286, 87%, 74%);
-  --Accented-Color: hsl(232, 41%, 14%);
-  --White: hsl(0, 0%, 100%);
-  --Black: hsl(0, 0%, 0%);
+  --Text: #e2ffdb;
+  --Text2: #ade5a9;
+  --Main-Color-1: #f57074;
+  --Main-Color-2: #73f0f7;
+  --Main-Color-3: #db83f6;
+  --Accented-Color: #151932;
+  --White: #ffffff;
+  --Black: #000000;
 }
 
 html {

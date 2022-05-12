@@ -5,9 +5,9 @@
   align-self: center;
   justify-self: center;
   background-color: transparent;
-  border: solid 1px hsl(116, 54%, 78%);
+  border: solid 1px var(--Text2);
   border-radius: 1rem;
-  color: hsl(116, 54%, 78%);
+  color: var(--Text2);
   padding: 2rem;
   margin: 2rem;
 }
