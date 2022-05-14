@@ -1,5 +1,8 @@
 {
   "githubAPI": {
     "getRepos": "https://api.github.com/users/MarthoxGT/repos"
-  }
+  },
+  "githubProfile": "https://github.com/MarthoxGT",
+  "linkedInPorfile": "https://www.linkedin.com/in/mateo-gregory-jim%C3%A9nez-85b1b9169/",
+  "twitterProfile": "https://twitter.com/marthoxgt"
 }
