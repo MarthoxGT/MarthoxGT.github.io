@@ -13,16 +13,19 @@ const SocialPanel = () => {
     <div className="socialPanel">
       <img
         className="socialIcon"
+        alt=""
         src={github}
         onClick={() => window.open(githubProfile, "_blank").focus()}
       />
       <img
         className="socialIcon"
+        alt=""
         src={linkedIn}
         onClick={() => window.open(linkedInPorfile, "_blank").focus()}
       />
       <img
         className="socialIcon"
+        alt=""
         src={twitter}
         onClick={() => window.open(twitterProfile, "_blank").focus()}
       />

@@ -10,13 +10,15 @@
     "fullName": "Mateo Gregory Jimenez"
   },
   "general": {
-    "description": "Description",
+    "quota": "The day you think you have nothing left to learn is the day you become an ignorant.\n",
+    "description": "Software engineer",
     "personalInfo": "Personal info",
-    "professionalInfo": "Professional info"
+    "professionalInfo": "Professional info",
+    "footerMessage": "🏗️🚧👷🏽 Responsiveness under construction 🏗️🚧👷🏽"
   },
   "content": {
-    "personalInfo": "Here goes the personal info content for the about me page",
-    "professionalInfo": "Here goes the professional info content for the about me page"
+    "professionalInfo": "I'm a systems engineer graduated from the Universidad del Valle, proficient in the command of the English language, with knowledge and experience in some programming languages such as Python, JavaScript, C#, C++, Java, Ruby and Elixir. And frameworks such as React, NodeJS, Django, Flask, Phoenix, and Rails. I have experience using version control software like Git and remote version control hosting platforms such as GitHub, virtualization technologies such as docker, docker-compose, and virtual machines, and networking concepts with useful applications when working with containerized applications. I'm actively looking for new concepts and technologies to learn so I can apply them in a near future, help people find the best solution for their problems, and also use them in my own.",
+    "personalInfo": "I'm a cat lover, I have two cats, Pyro the crazy orange one (aka the midnight demon) and Asteri, the spoiled one (aka the love seeker). I play dnd every sunday with my friends from Argentina, Spain and other cities in Colombia, currently I am playing with a fighter because my cleric died in the hands of a one-eyed demon. Also, I love music, I cannot imagine a day without music, and I have learned to enjoy all the genres (almost), from pop, to metal, from hip-hop, to ballads, from R&B to punk, from classical to techno, and go on, I do am the guy that can listen and enjoy any good piece of music independant of its genre, part of that came from OSU! a rithm game, with mainly korean and japanese music. I think of myself as a creative person, who is constantly looking to start new projects, sometimes struggles finishing them, but I'm working on that."
   },
   "myWork": {
     "createdAt": "Created:",

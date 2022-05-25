@@ -45,3 +45,10 @@
   margin-bottom: 1rem;
   border-bottom: solid 1px hsl(116, 54%, 78%);
 }
+
+@media only screen and (max-width: 1000px) {
+  .workCard {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}

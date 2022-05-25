@@ -1,5 +1,6 @@
 {
   "githubAPI": {
+    "getGeneralInfo": "https://api.github.com/users/MarthoxGT",
     "getRepos": "https://api.github.com/users/MarthoxGT/repos"
   },
   "githubProfile": "https://github.com/MarthoxGT",
