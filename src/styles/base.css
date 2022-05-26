@@ -1,0 +1,93 @@
+/* Colors */
+
+:root {
+  --background: #121212;
+  --Text: #e2ffdb;
+  --Text2: #ade5a9;
+  --Main-Color-1: #f57074;
+  --Main-Color-2: #73f0f7;
+  --Main-Color-3: #db83f6;
+  --Accented-Color: #151932;
+  --White: #ffffff;
+  --Black: #000000;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  height: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(116, 54%, 78%);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: greenyellow;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito Sans", Helvetica, sans-serif;
+  font-size: 1.6rem;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--background);
+}
+
+/* weight 300, 400, 800 */
+h1 {
+  font-weight: 800;
+  color: var(--Text);
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-weight: 600;
+  color: var(--Text);
+  font-size: 4rem;
+}
+
+h3 {
+  font-weight: 600;
+  color: var(--Text);
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-weight: 600;
+  color: var(--Text);
+  font-size: 2rem;
+}
+
+p {
+  color: var(--Text);
+  font-size: 1.75rem;
+  line-height: 3rem;
+}
+
+a {
+  color: var(--Text);
+  text-decoration: none;
+}
+
+li {
+  font-weight: 800;
+  color: var(--Accented-Color);
+}

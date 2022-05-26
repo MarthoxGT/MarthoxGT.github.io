@@ -1,0 +1,31 @@
+.contentSlider {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .contentSlider {
+    width: 75%;
+  }
+}
+
+.linkToContent {
+  display: flex;
+  text-align: center;
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.contentSliderButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 5%;
+  font-weight: 400;
+  font-size: 4rem;
+  color: var(--Text);
+}

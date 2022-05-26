@@ -1,0 +1,13 @@
+.searchBar {
+  width: 90%;
+  height: 5%;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  background-color: transparent;
+  border: solid 1px var(--Text2);
+  border-radius: 1rem;
+  color: var(--Text2);
+  padding: 2rem;
+  margin: 2rem;
+}

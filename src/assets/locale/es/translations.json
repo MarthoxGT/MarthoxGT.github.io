@@ -1,0 +1,28 @@
+{
+  "routes": {
+    "home": "Inicio",
+    "about": "Acerca de mi",
+    "mywork": "Mi trabajo",
+    "getresume": "Obtener Curriculum"
+  },
+  "personal": {
+    "name": "MarthoxGT",
+    "fullName": "Mateo Gregory Jimenez"
+  },
+  "general": {
+    "description": "Descripcion",
+    "personalInfo": "Informacion personal",
+    "professionalInfo": "Informacion profesional"
+  },
+  "content": {
+    "personalInfo": "Aqui va la informacion personal para la pagina de sobre mi",
+    "professionalInfo": "Aqui va la informacion profesional para la pagina de sobre mi"
+  },
+  "myWork": {
+    "createdAt": "Creado hace:",
+    "updatedAt": "Acualizado hace:",
+    "description": "Descripcion:",
+    "noDescription": "En este momento no hay detalles disponibles sobre este projecto",
+    "daysAgo": "dias atras"
+  }
+}
