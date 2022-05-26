@@ -41,12 +41,14 @@ const WorkSlider = ({ searchQuery }) => {
                   className="cardContent"
                   onClick={() => window.open(html_url, "_blank").focus()}
                 >
-                  <h1>{name}</h1>
-                  <h2>{owner.login}</h2>
+                  <h2 className="projectTitle">{name}</h2>
+                  <h3 className="projectOwner">{owner.login}</h3>
                   <div className="cardSeparator" />
                   <div className="cardElement">
-                    <h3>{t("myWork.createdAt")}</h3>
-                    <p>
+                    <h4 className="cardElementLabel">
+                      {t("myWork.createdAt")}
+                    </h4>
+                    <p className="cardElementDate">
                       {Temporal.Instant.from(created_at)
                         .until(Temporal.Now.instant())
                         .round("days")
@@ -60,8 +62,10 @@ const WorkSlider = ({ searchQuery }) => {
                     </p>
                   </div>
                   <div className="cardElement">
-                    <h3>{t("myWork.updatedAt")}</h3>
-                    <p>
+                    <h4 className="cardElementLabel">
+                      {t("myWork.updatedAt")}
+                    </h4>
+                    <p className="cardElementDate">
                       {Temporal.Instant.from(updated_at)
                         .until(Temporal.Now.instant())
                         .round("days")
@@ -75,8 +79,12 @@ const WorkSlider = ({ searchQuery }) => {
                     </p>
                   </div>
                   <div className="cardElement">
-                    <h3>{t("myWork.description")}</h3>
-                    <p>{description || t("myWork.noDescription")}</p>
+                    <h4 className="cardElementLabel">
+                      {t("myWork.description")}
+                    </h4>
+                    <p className="cardElementDescription">
+                      {description || t("myWork.noDescription")}
+                    </p>
                   </div>
                 </section>
               </div>

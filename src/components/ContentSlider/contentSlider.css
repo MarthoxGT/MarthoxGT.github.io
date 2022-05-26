@@ -5,6 +5,12 @@
   align-items: center;
 }
 
+@media only screen and (max-width: 1000px) {
+  .contentSlider {
+    width: 75%;
+  }
+}
+
 .linkToContent {
   display: flex;
   text-align: center;

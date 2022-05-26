@@ -70,9 +70,15 @@ h3 {
   font-size: 2.5rem;
 }
 
+h4 {
+  font-weight: 600;
+  color: var(--Text);
+  font-size: 2rem;
+}
+
 p {
   color: var(--Text);
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   line-height: 3rem;
 }
 

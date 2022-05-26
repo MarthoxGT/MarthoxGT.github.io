@@ -1,5 +1,4 @@
 import "./socialPanel.css";
-// import facebook from "../../assets/icons/facebook.svg";
 import linkedIn from "../../assets/icons/linkedIn.svg";
 import github from "../../assets/icons/github.svg";
 import twitter from "../../assets/icons/twitter.svg";

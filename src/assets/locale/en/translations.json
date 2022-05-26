@@ -14,7 +14,8 @@
     "description": "Software engineer",
     "personalInfo": "Personal info",
     "professionalInfo": "Professional info",
-    "footerMessage": "🏗️🚧👷🏽 Responsiveness under construction 🏗️🚧👷🏽"
+    "footerMessage": "🏗️🚧👷🏽 Responsiveness and styling under construction 🏗️🚧👷🏽",
+    "downloadPDF": "(👉ﾟヮﾟ)👉 [ Download PDF ] 👈(ﾟヮﾟ👈)"
   },
   "content": {
     "professionalInfo": "I'm a systems engineer graduated from the Universidad del Valle, proficient in the command of the English language, with knowledge and experience in some programming languages such as Python, JavaScript, C#, C++, Java, Ruby and Elixir. And frameworks such as React, NodeJS, Django, Flask, Phoenix, and Rails. I have experience using version control software like Git and remote version control hosting platforms such as GitHub, virtualization technologies such as docker, docker-compose, and virtual machines, and networking concepts with useful applications when working with containerized applications. I'm actively looking for new concepts and technologies to learn so I can apply them in a near future, help people find the best solution for their problems, and also use them in my own.",
